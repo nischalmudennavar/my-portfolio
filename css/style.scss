@@ -134,7 +134,7 @@ body {
           border-radius: 30px;
           transition: all 100ms ease-in-out;
 
-          &:nth-child(1) {
+          &:nth-child(2) {
             background: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             border: 1px solid #000;
@@ -159,7 +159,7 @@ body {
             //   );
             }
           }
-          &:nth-child(2) {
+          &:nth-child(1) {
             background: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
             border: 1px solid rgb(0, 0, 0);

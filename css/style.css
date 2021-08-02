@@ -173,24 +173,24 @@ body .section-one .hero-one .btn-container .hero-btn {
   transition: all 100ms ease-in-out;
 }
 
-body .section-one .hero-one .btn-container .hero-btn:nth-child(1) {
+body .section-one .hero-one .btn-container .hero-btn:nth-child(2) {
   background: white;
   color: black;
   border: 1px solid #000;
 }
 
-body .section-one .hero-one .btn-container .hero-btn:nth-child(1):hover {
+body .section-one .hero-one .btn-container .hero-btn:nth-child(2):hover {
   background: #000;
   color: white;
 }
 
-body .section-one .hero-one .btn-container .hero-btn:nth-child(2) {
+body .section-one .hero-one .btn-container .hero-btn:nth-child(1) {
   background: black;
   color: white;
   border: 1px solid black;
 }
 
-body .section-one .hero-one .btn-container .hero-btn:nth-child(2):hover {
+body .section-one .hero-one .btn-container .hero-btn:nth-child(1):hover {
   background: white;
   color: black;
 }

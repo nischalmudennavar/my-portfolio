@@ -80,40 +80,40 @@ next();
 
 var mt = gsap.timeline();
 
-mt.from(".loader-wrapper", {
-  opacity: 1,
-  display: "flex",
-});
-mt.to(".section-two", {
-  x: "200%",
-});
-mt.from(".loader-bar", {
-  width: "0%",
-  duration: 6,
-});
-mt.to(".loader-bar", {
-  width: "100%",
-});
-mt.to(".loader-heading", {
-  opacity: 0,
-});
+// mt.from(".loader-wrapper", {
+//   opacity: 1,
+//   display: "flex",
+// });
+// mt.to(".section-two", {
+//   x: "200%",
+// });
+// mt.from(".loader-bar", {
+//   width: "0%",
+//   duration: 6,
+// });
+// mt.to(".loader-bar", {
+//   width: "100%",
+// });
+// mt.to(".loader-heading", {
+//   opacity: 0,
+// });
 
-mt.to(".loader-inner", {
-    opacity: 0
-});
+// mt.to(".loader-inner", {
+//     opacity: 0
+// });
 
-mt.to(".loader-wrapper", {
-  x: "-100%",
-  duration: 1,
-});
+// mt.to(".loader-wrapper", {
+//   x: "-100%",
+//   duration: 1,
+// });
 
 
 
-mt.from(".section-one", {
-  x: "100%",
-  ease: "power1.inOut",
-  duration: 1,
-});
+// mt.from(".section-one", {
+//   x: "100%",
+//   ease: "power1.inOut",
+//   duration: 1,
+// });
 
 
 var mywork = document.getElementById("my_work");

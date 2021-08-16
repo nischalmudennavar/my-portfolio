@@ -16,6 +16,25 @@ $awesome-font-3: "VT323", sans-serif;
 $awesome-font-4: "DotGothic16", cursive;
 $awesome-font-5: "Bungee Hairline", cursive;
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(199, 199, 199);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,12 +45,6 @@ body {
   height: 100vh;
   overflow-x: hidden;
 
-  h1 {
-    font-family: $awesome-font-5;
-    color: white;
-    font-size: 7rem;
-    font-weight: 100;
-  }
   .loader-wrapper {
     display: flex;
     justify-content: center;
@@ -43,7 +56,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    // display: none;
+    display: none;
 
     .loader {
       width: 50%;
@@ -106,7 +119,7 @@ body {
         font-size: 8rem;
         text-align: center;
         position: relative;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: Fira Code;
 
         &::selection {
           color: white;
@@ -121,17 +134,19 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         .hero-btn {
           height: 60px;
           width: 170px;
-          font-size: 1.25rem;
+          font-size: 1.35rem;
           background: #000;
           color: white;
           border: none;
           margin: 20px;
           cursor: pointer;
-          border-radius: 30px;
+          // border-radius: 30px;
+          font-family: Fira Code;
+
           transition: all 100ms ease-in-out;
 
           &:nth-child(2) {
@@ -142,21 +157,21 @@ body {
             &:hover {
               background: #000;
               color: white;
-            //    background-image: linear-gradient(
-            //     to right top,
-            //     #d16ba5,
-            //     #c36ab1,
-            //     #b16abc,
-            //     #9a6cc6,
-            //     #7c6fce,
-            //     #736cd2,
-            //     #6969d5,
-            //     #5c67d9,
-            //     #735bd8,
-            //     #8a4cd3,
-            //     #a136ca,
-            //     #b600be
-            //   );
+              //    background-image: linear-gradient(
+              //     to right top,
+              //     #d16ba5,
+              //     #c36ab1,
+              //     #b16abc,
+              //     #9a6cc6,
+              //     #7c6fce,
+              //     #736cd2,
+              //     #6969d5,
+              //     #5c67d9,
+              //     #735bd8,
+              //     #8a4cd3,
+              //     #a136ca,
+              //     #b600be
+              //   );
             }
           }
           &:nth-child(1) {
@@ -167,21 +182,21 @@ body {
             &:hover {
               background: rgb(255, 255, 255);
               color: rgb(0, 0, 0);
-            //    background-image: linear-gradient(
-            //     to right top,
-            //     #d16ba5,
-            //     #c36ab1,
-            //     #b16abc,
-            //     #9a6cc6,
-            //     #7c6fce,
-            //     #736cd2,
-            //     #6969d5,
-            //     #5c67d9,
-            //     #735bd8,
-            //     #8a4cd3,
-            //     #a136ca,
-            //     #b600be
-            //   );
+              //    background-image: linear-gradient(
+              //     to right top,
+              //     #d16ba5,
+              //     #c36ab1,
+              //     #b16abc,
+              //     #9a6cc6,
+              //     #7c6fce,
+              //     #736cd2,
+              //     #6969d5,
+              //     #5c67d9,
+              //     #735bd8,
+              //     #8a4cd3,
+              //     #a136ca,
+              //     #b600be
+              //   );
             }
           }
           &:active {
@@ -233,38 +248,127 @@ body {
       }
     }
   }
-  .section-two{
-
-    height:100vh;
-    width:100vw;
+  .section-two {
+    height: 100vh;
+    width: 100vw;
     position: absolute;
     background: #000;
     z-index: 40;
-    .back-page{
-        position: absolute;
-        bottom:40px;
-        left:50px;
-        height:70px;
-        width:70px;
-        font-size: 2rem;
-        border-radius: 50%;
-        border:none;
-        color:white;
-        border:1px solid white;
-        background: #000;
-        cursor: pointer;
-        transition: all 100ms ease-in-out;
-        &:hover {
-            transform: translateX(-10px);
-            transition: all 100ms ease-in-out;
-            &:hover i{
-                transform: translateX(-10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .work-container {
+      height: 80vh;
+      width: 80%;
+      // border: 1px solid #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      .projects {
+        height: 70vh;
+        width: 60vw;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        margin: 10vh;
+        position: relative;
+        .project-desc {
+          width: 45vw;
+          height: 65vh;
+          display: flex;
+          margin: auto;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          text-align: left;
+          .project-title {
+            color: white;
+            font-family: Fira Code;
+            font-size: 2.5rem;
+            text-align:left;
+            
+            font-weight: bold;
+            margin-left: 30px;
+          }
+          .project-details {
+            color: white;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            width: 90%;
+            text-align: justify;
+            margin: 30px;
+            font-weight: 100;
+          }
+          a {
+            .more-about-the-project {
+              height: 60px;
+              width: auto;
+              padding:5px;
+              font-size: 1.35rem;
+              background: #000;
+              color: white;
+              border: none;
+              margin-left: 40px;
+              cursor: pointer;
+              // border-radius: 30px;
+              border: 1px solid #fff;
+              font-family: Fira Code;
+              i{
+                padding:10px;
+              }
 
 
+              transition: all 100ms ease-in-out;
+              &:hover {
+                background: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+              }
+
+              &:active {
+                transition: all 100ms ease-in-out;
+                transform: scale(0.95);
+
+              }
             }
+          }
         }
-
+        .project-gif {
+          width: 30vw;
+          height: 55vh;
+          background: #fff;
+          position: relative;
+          left: 40px;
+        }
+      }
     }
-   
+    .back-page {
+      position: absolute;
+      bottom: 40px;
+      left: 50px;
+      height: 70px;
+      width: 70px;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      border: none;
+      color: white;
+      border: 1px solid white;
+      background: rgb(0, 0, 0);
+      cursor: pointer;
+      transition: all 100ms ease-in-out;
+      &:hover {
+        transform: translateX(-10px);
+        transition: all 100ms ease-in-out;
+        &:hover i {
+          transform: translateX(-10px);
+        }
+      }
+    }
   }
 }
